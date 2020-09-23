@@ -1,0 +1,19 @@
+server:
+  compression:
+    enabled: true
+    mime-types:
+      - application/json
+      - application/javascript
+      - text/html
+      - text/css
+
+spring:
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths:
+            - '/*.js'
+            - '/*.css'
+      cache: true
